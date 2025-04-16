@@ -59,4 +59,45 @@ public class RoteiroTest {
 		assertTrue(bst.isAVL());
     }
 
+	@Test
+	public void testInsertIsAVL() {
+		BST bst = new BST();
+
+		// test rotate left
+		assertTrue(bst.isAVL());
+		bst.insertAvl(3);
+		bst.insertAvl(2);
+		bst.insertAvl(1);
+		assertTrue(bst.isAVL());
+
+
+		BST bst1 = new BST();
+		// test rotate left
+		assertTrue(bst.isAVL());
+		bst1.insertAvl(1);
+		bst1.insertAvl(2);
+		bst1.insertAvl(3);
+		assertTrue(bst1.isAVL());
+
+
+		BST bst2 = new BST();
+		// test rotate left
+		assertTrue(bst2.isAVL());
+		bst2.insertAvl(5);
+		bst2.insertAvl(3);
+		bst2.insertAvl(4);
+		assertTrue(bst2.isAVL());
+
+		BST bst3 = new BST();
+		// test rotate left
+		assertTrue(bst3.isAVL());
+		bst3.insertAvl(3);
+		bst3.insertAvl(6);
+		bst3.insertAvl(4);
+		assertTrue(bst3.isAVL());
+
+	}
+
 }
+
+
